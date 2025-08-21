@@ -31,7 +31,9 @@ class BillsService {
       return this.loadingPromise;
     }
 
-    this.loadingPromise = fetch('/bills.json')
+    // Use relative path that works both locally and on GitHub Pages
+    const billsPath = import.meta.env.BASE_URL + 'bills.json';
+    this.loadingPromise = fetch(billsPath)
       .then(res => res.json())
       .then((data: BillsData) => {
         this.billsData = data;

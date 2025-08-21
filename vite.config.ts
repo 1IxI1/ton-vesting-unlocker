@@ -4,6 +4,7 @@ import { nodePolyfills } from 'vite-plugin-node-polyfills'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: process.env.GH_PAGES ? '/ton-vesting-unlocker/' : './',
   plugins: [
     react(),
     nodePolyfills({
@@ -15,6 +16,14 @@ export default defineConfig({
       },
     }),
   ],
+  build: {
+    target: ['es2020'],
+  },
+  optimizeDeps: {
+    esbuildOptions: {
+      target: 'es2020',
+    },
+  },
   server: {
     allowedHosts: ['c0d32de0b98b.ngrok-free.app', 'unlocker.ton.org', '1ixi1.github.io'],
   },

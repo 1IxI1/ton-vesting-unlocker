@@ -2,15 +2,6 @@
 
 A minimalist web application for unlocking vested TON tokens from the TON Locker contract.
 
-## Features
-
-- Connect wallet via TON Connect
-- Manual address entry for cold wallets
-- Real-time balance display (available to withdraw & still locked)
-- Automatic withdrawal via TON Connect
-- QR code generation for manual withdrawals
-- Mainnet and testnet support
-
 ## Development
 
 ```bash
@@ -27,10 +18,10 @@ yarn build
 ## Usage
 
 ### Mainnet
-Visit the app at `http://localhost:5173`
+Visit the app at `https://1ixi1.github.io/ton-vesting-unlocker`
 
 ### Testnet
-Add `?testnet=true` parameter: `http://localhost:5173?testnet=true`
+Add `?testnet=true` parameter: `https://1ixi1.github.io/ton-vesting-unlocker?testnet=true`
 
 ## Contract Address
 
@@ -44,7 +35,7 @@ To withdraw available tokens:
 2. Check your available balance
 3. Click "Withdraw Available" button
 4. For TON Connect: Approve the transaction
-5. For manual entry: Send 0.05 TON with comment "w" to the locker address
+5. For manual entry: Send 1 TON with comment "w" to the locker address
 
 ## Architecture
 
@@ -53,4 +44,4 @@ The app uses:
 - @tonconnect/ui-react for wallet integration
 - @ton/ton, @ton/core for blockchain interaction
 - Tailwind CSS for styling
-- TonCenter API with rate limiting (1 req/sec)
+- TonCenter API without key

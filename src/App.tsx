@@ -115,7 +115,8 @@ function AppContent() {
 
 function App() {
   const isTestnet = useIsTestnet();
-  const manifestUrl = `${window.location.origin}/tonconnect-manifest.json`;
+  const manifestUrl = `https://1ixi1.github.io/ton-vesting-unlocker/tonconnect-manifest.json`;
+  console.log("Manifest URL: " + manifestUrl);
 
   return (
     <TonConnectUIProvider 

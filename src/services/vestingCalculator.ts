@@ -1,8 +1,14 @@
-// Vesting parameters from the locker contract
-const DEPOSITS_END_TIME = 1698019200; // 23 Oct 2023 00:00:00 GMT
-const VESTING_START_TIME = 1760227200; // Oct 12 2025 00:00:00 GMT  
-const VESTING_TOTAL_DURATION = 94608000; // 3 years in seconds
-const UNLOCK_PERIOD = 2592000; // 30 days in seconds
+// Mainnet
+// const DEPOSITS_END_TIME = 1698019200; // 23 Oct 2023 00:00:00 GMT
+// const VESTING_START_TIME = 1760227200; // Oct 12 2025 00:00:00 GMT  
+// const VESTING_TOTAL_DURATION = 94608000; // 3 years in seconds
+// const UNLOCK_PERIOD = 2592000; // 30 days in seconds
+
+// Mainnet test
+const DEPOSITS_END_TIME = 1757332800; // Mon Sep 08 2025 12:00:00 GMT+0000
+const VESTING_START_TIME = 1757505600; // Wed Sep 10 2025 12:00:00 GMT+0000, START_TIME + DEPOSITS_DURATION + LOCK_DURATION
+const VESTING_TOTAL_DURATION = 86400 * 3; // 3 days
+const UNLOCK_PERIOD = 86400; // every day
 
 // Testnet:
 // const START_TIME = 1755750831; // Thu Aug 21 07:33:51 +03 2025

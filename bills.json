@@ -1,10 +1,18 @@
 {
-  "total_bills": 2,
-  "total_balance_tons": 0.9949656,
-  "total_deposits_tons": 100,
-  "total_coins_locked": 100000000000,
-  "total_reward": 49000000000,
+  "total_bills": 3,
+  "total_balance_tons": 1.492423114,
+  "total_deposits_tons": 200,
   "bills": [
+    {
+      "billAddress": "0:4D794DBF6D8629BE14A02E773BB3F5F0B66F860E9AB4BCE99F16649DAB4AF21E",
+      "userAddress": "EQAZ3Z3iWsk1eBFkE_iWEAYc8o9S2vFYE3O9hnH3q939ZMmq",
+      "balance": "497457514",
+      "balanceTons": 0.497457514,
+      "totalDeposit": "100000000000",
+      "totalDepositTons": 100,
+      "totalDepositStr": "100,00",
+      "lastWithdrawTime": 1757598776
+    },
     {
       "billAddress": "0:26FCECB41A76A3EC5F844BE65159111320AE0F44605591AD080524974B918564",
       "userAddress": "EQCdqXGvONLwOr3zCNX5FjapflorB6ZsOdcdfLrjsDLt3Fy9",
